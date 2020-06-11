@@ -18,6 +18,5 @@ export const headerLangauge = new LocalizedStrings({
         Email:'Augustog5896@gmail.com',
         Profile:'About Me',
         Projects:'My Projects'
-
     }
 });
