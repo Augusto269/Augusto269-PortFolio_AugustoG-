@@ -9,6 +9,7 @@ export const indexStyle = {
       },
     header:{
         display:'flex',
+        
         justifyContent:'flex-end',
         maxHeight:'10%'
     },
