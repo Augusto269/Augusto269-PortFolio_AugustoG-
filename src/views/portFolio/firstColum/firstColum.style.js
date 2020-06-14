@@ -17,5 +17,14 @@ export default theme => ({
     Pskills:{
         textDecoration:' underline' ,
         marginBottom:'0.5rem'
+    },
+    education:{
+        fontWeight: 'bold',
+        textDecoration:' underline' ,
+        fontSize:'14px'
+    },
+    icons:{
+        marginTop:'1px',
+        marginBottom:'1px'
     }
 })

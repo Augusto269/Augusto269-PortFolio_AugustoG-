@@ -75,8 +75,8 @@ export const firstColumLanguage = new LocalizedStrings({
         Profesiona:"professional proficiency",
         Education:"Education",
         Urquiza:"Escuela Sup erior de Comerio Nº 49 “Cap. Gral. J. J. De Urquiza” ",
-        SistemAnalist:"System Analyst(Completed 2015 -2017)",
-        Average:"Average: 7.8",
+        SistemAnalist:"System Analyst (Completed 2015 -2017)",
+        Average:"Average:  7.8",
         UTN:"NATIONAL TECHNOLOGICAL UNIVERSITY — ROSARIO",
         Engineering:"Systems Engineering — 2012-2015",
         Expected:"(expected)"
