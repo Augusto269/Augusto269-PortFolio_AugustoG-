@@ -14,11 +14,8 @@ export default function AboutMe() {
     const [age] = useState(moment().diff('1993-01-06', 'years'));
     const [start] = useState(moment().diff('2014-01-02', 'years'));
     const [startDevelopYear] = useState(moment().diff('2019-06-02', 'years'));
-    const [startDeveloperMonths] = useState(moment().diff('2019-01-06', 'months') - (12 * startDevelopYear) + 1)
-    console.log(age);
-    console.log(start);
-    console.log(startDevelopYear);
-    console.log(startDeveloperMonths);
+    const [startDeveloperMonths] = useState(moment().diff('2019-06-02', 'months') - (12 * startDevelopYear) + 1)
+
 
     return (
         <div className={classes.root}>
