@@ -1,4 +1,4 @@
-import React, { useState ,useEffect  } from 'react';
+import React, { useState, useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import firstColumStyle from './firstColum.style'
 import ProfilePhoto from '../../../images/ProfilePhoto.jpeg'
@@ -8,10 +8,10 @@ import Icons from '../../../components/icons/icons'
 const useStyles = makeStyles(firstColumStyle);
 
 export default function FirstColum() {
-  useEffect(() => {
-  },[]);
+    useEffect(() => {
+    }, []);
     const classes = useStyles();
-    const [pSkills, setPSkills] = useState({
+    const [pSkills] = useState({
         Javascript: { icon: 'JavaScript', title: firstColumLanguage.JavaScript, placement: "top" },
         React: { icon: 'React', title: firstColumLanguage.React, placement: "top" },
         NodeJs: { icon: 'nodejs', title: firstColumLanguage.Nodejs, placement: "top" },
@@ -21,11 +21,11 @@ export default function FirstColum() {
         Agilty: { icon: 'scrum', title: firstColumLanguage.Agilty, placement: "bottom" },
         AWS: { icon: 'aws', title: firstColumLanguage.AWS, placement: "bottom" }
     });
-    const [sSkills, setSSkills] = useState({
-        PHP: { icon: 'php', title: firstColumLanguage.PHP, placement: "top"  },
-        Net: { icon: 'net', title: firstColumLanguage.Net , placement: "top" },
-        MongoDB: { icon: 'mongoDB', title: firstColumLanguage.MongoDB , placement: "top" },
-        Angular: { icon: 'angular', title: firstColumLanguage.Angular , placement: "top" },
+    const [sSkills] = useState({
+        PHP: { icon: 'php', title: firstColumLanguage.PHP, placement: "top" },
+        Net: { icon: 'net', title: firstColumLanguage.Net, placement: "top" },
+        MongoDB: { icon: 'mongoDB', title: firstColumLanguage.MongoDB, placement: "top" },
+        Angular: { icon: 'angular', title: firstColumLanguage.Angular, placement: "top" },
     });
     return (
         <div className={classes.root}>
@@ -47,9 +47,13 @@ export default function FirstColum() {
                     return <Icons icon={sSkills[item].icon} title={sSkills[item].title} placement={sSkills[item].placement} />
                 }))}
             </div>
+            <div className={`${classes.nameLastName} ${classes.Pskills}`} > {firstColumLanguage.Education}</div>
+            <p className={classes.nameLastName}>{firstColumLanguage.SistemAnalist}</p>
+            <p className={classes.nameLastName}>{firstColumLanguage.Average}</p>
             <div className={`${classes.nameLastName} ${classes.Pskills}`} > {firstColumLanguage.Languages}</div>
-            <div className={classes.education}>{firstColumLanguage.English} : </div>  
-            <p className={classes.nameLastName}>{firstColumLanguage.Profesiona}</p>
+            <span className={classes.education}>{firstColumLanguage.English} :</span><span className={classes.nameLastName}>  {firstColumLanguage.Profesiona}</span>
+            <p> <span className={classes.education}>{firstColumLanguage.Spansih} :</span><span className={classes.nameLastName}>  {firstColumLanguage.Native}</span> </p>
+
         </div>
     );
 }

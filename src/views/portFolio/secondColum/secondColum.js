@@ -5,7 +5,10 @@ import AppBar from "@material-ui/core/AppBar";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import SwipeableViews from "react-swipeable-views";
-import TabPanel from '../../../components/tabPanel/tabPanel'
+import TabPanel from '../../../components/tabPanel/tabPanel';
+import WorkExperienceStyle from './workingExperience/workingExperience';
+import {secondColumLanguage} from './secondColum.language';
+import AboutMe from './aboutMe/aboutMe'
 
 const useStyles = makeStyles(secondColum);
 
@@ -34,8 +37,8 @@ export default function SecondColum() {
             variant="fullWidth"
             aria-label="full width tabs example"
           >
-            <Tab label="About My"  />
-            <Tab label="Working Experience"  />
+            <Tab label={secondColumLanguage.About}  />
+            <Tab label={secondColumLanguage.Wk}  />
           </Tabs>
         </AppBar>
         <SwipeableViews
@@ -44,10 +47,10 @@ export default function SecondColum() {
           onChangeIndex={handleChangeIndex}
         >
           <TabPanel value={value} index={0} dir={theme.direction}>
-            Item One
+            <AboutMe/>
           </TabPanel>
           <TabPanel value={value} index={1} dir={theme.direction}>
-            Item Two
+            <WorkExperienceStyle/>
           </TabPanel>
 
         </SwipeableViews>

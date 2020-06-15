@@ -1,13 +1,13 @@
 export default theme => ({
     root: {
-        maxWidth:'80%',
+        maxWidth:'90%',
         textAalign: 'center',
         display: 'flex',
         flexWrap: 'wrap',
         '& > *': {
           margin: theme.spacing(1),
-          width: theme.spacing(100),
-          height: theme.spacing(69),
+          width: theme.spacing(120),
+          height: theme.spacing(80),
         },
       },
     principalContainer :{
