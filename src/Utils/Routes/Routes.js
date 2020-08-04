@@ -1,5 +1,5 @@
 
-import React ,{ useState, useEffect } from 'react';
+import React  from 'react';
 import PortFolio from '../../views/portFolio/portFolio';
 import Projects from '../../views/projects/projects';
 import {

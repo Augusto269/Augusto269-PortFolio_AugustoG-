@@ -8,23 +8,27 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import ListItem from "@material-ui/core/ListItem";
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import EmailIcon from '@material-ui/icons/Email';
+import { Link } from "react-router-dom";
+import { MemoryRouter as Router } from 'react-router';
+
 
 const useStyles = makeStyles(headerStyle);
 
 export default function Header() {
     const classes = useStyles();
     return (
+        <Router>
         <ListItem className={classes.listItem}>
             <Button
-                // href="https://github.com/Augusto269"
-                target="_blank"
+                component={Link}
+                to="/"
                 className={classes.navLink}
             >
                 {headerLangauge.Profile}
             </Button>
             <Button
-                // href="https://github.com/Augusto269"
-                target="_blank"
+                component={Link}
+                to="/projects"
                 className={classes.navLink}
             >
                 {headerLangauge.Projects}
@@ -72,7 +76,7 @@ export default function Header() {
                 </Button>
             </Tooltip>
         </ListItem>
-
+        </Router>
     );
 }
 
