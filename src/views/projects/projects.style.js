@@ -1,4 +1,7 @@
 export default theme => ({
+  PaperContainer:{
+    overflow : 'hidden'
+  },
     root: {
         maxWidth:'90%',
         textAalign: 'center',
@@ -12,6 +15,8 @@ export default theme => ({
       },
     principalContainer :{
         padding: theme.spacing(2),
+        height: '100%',
+        overflowY:'auto'
     },
     divider:{
         minHeight:'520px',
